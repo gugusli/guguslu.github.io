@@ -1,157 +1,646 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Agus — Portfolio · Programador de Videojuegos (Godot)</title>
-  <meta name="description" content="Portfolio de Agus — programador de videojuegos. Proyectos: AFTERSHOCK (roguelite en desarrollo), herramientas y repositorios." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agustín Aragón — Game Developer Portfolio</title>
+  <meta name="description" content="Portfolio de Agustín Aragón — Programador de videojuegos especializado en Godot 4, roguelites y sistemas de gameplay.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Archivo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo">AG</div>
-        <div>
-          <h1>Agustín (guguslu / gus) — Programador de videojuegos</h1>
-          <p>Godot 4 · GDScript · Diseño de sistemas · Proyectos jugables · Roguelites</p>
+  
+  <!-- Animated background -->
+  <div class="bg-animation">
+    <div class="grid-overlay"></div>
+    <div class="noise"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <div class="nav-logo">AG</div>
+        <span class="nav-status">
+          <span class="status-dot"></span>
+          Disponible para proyectos
+        </span>
+      </div>
+      <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#skills">Skills</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-tag">GAME DEVELOPER · GODOT SPECIALIST</div>
+          <h1 class="hero-title">
+            Agustín <span class="highlight">Aragón</span>
+          </h1>
+          <p class="hero-subtitle">
+            Programador de videojuegos obsesionado con crear <span class="text-accent">game feel premium</span> y sistemas de gameplay emergentes. Especializado en roguelites, arquitectura modular y optimización para mobile.
+          </p>
+          <div class="hero-cta">
+            <a href="#proyectos" class="btn btn-primary">
+              <span>Ver AFTERSHOCK</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10h12m-6-6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="assets/AFTERSHOCK_GDD_v3_COMPLETO.docx" download class="btn btn-secondary">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 3v10m0 0l4-4m-4 4l-4-4m-3 7h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>Descargar GDD</span>
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-value">3+</div>
+              <div class="stat-label">Años de experiencia</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">1</div>
+              <div class="stat-label">Proyecto en desarrollo activo</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">70%</div>
+              <div class="stat-label">Progreso Vertical Slice</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <img src="Captura_de_pantalla_2026-01-29_042333.png" alt="AFTERSHOCK gameplay screenshot" class="hero-image">
+            <div class="hero-card-overlay">
+              <div class="card-badge">EN DESARROLLO</div>
+              <div class="card-title">AFTERSHOCK</div>
+              <div class="card-subtitle">Protocolo de Supervivencia</div>
+            </div>
+          </div>
         </div>
       </div>
-      <nav>
-        <a href="#sobre">Sobre mí</a>
-        <a href="#skills">Habilidades</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </header>
+    </div>
+  </section>
 
-    <div class="grid">
-      <main>
-        <section id="sobre">
-          <h2>Sobre mí</h2>
-          <p class="lead">Soy programador con aproximadamente tres años de experiencia en desarrollo y lógica de software, enfocado actualmente en desarrollo de videojuegos con Godot 4. Trabajo principalmente con GDScript, diseñando sistemas de gameplay, progresión, sinergias y arquitectura modular orientada a proyectos escalables. Me interesa especialmente el game feel, la claridad de código y la organización de proyectos en equipo.</p>
-
-          <p class="lead">Actualmente desarrollo <strong>AFTERSHOCK</strong>, un roguelite de acción para mobile (Android/iOS). El proyecto está en proceso y mi rol incluye diseño e implementación de sistemas de gameplay, mejoras y sinergias, arquitectura modular y planificación técnica mediante un GDD completo.</p>
-        </section>
-
-        <section id="proyectos">
-          <h2>Proyectos</h2>
-
-          <div class="project">
-            <h3>AFTERSHOCK — Roguelite de acción (Proyecto personal / En proceso)</h3>
-            <div class="meta">Motor: Godot 4.x · Plataforma objetivo: Mobile (Android/iOS) · Estado: <span class="status">en desarrollo</span></div>
-
-            <div style="margin-top:12px;">
-              <p>AFTERSHOCK combina supervivencia en tiempo real con construcción estratégica de builds. El diseño prioriza game feel, rejugabilidad y un sistema de <strong>sinergias por niveles</strong> que permite combinaciones emergentes potentes, además de un Director de IA que ajusta la dificultad dinámicamente.</p>
-
-              <div class="cols">
-                <div>
-                  <h4 style="margin:6px 0;color:#cfeffd">Qué hice (mi rol)</h4>
-                  <ul class="list">
-                    <li>Programación de sistemas de gameplay (mejoras, sinergias, pooling).</li>
-                    <li>Diseño técnico y estructuración del GDD y roadmap.</li>
-                    <li>Arquitectura modular para personajes, enemigos y oleadas.</li>
-                    <li>Implementación de Director de IA para ajuste de oleadas y eventos.</li>
-                    <li>Enfoque en performance móvil (object pooling, separación de lógica).</li>
-                  </ul>
-
-                  <h4 style="margin:6px 0;color:#cfeffd">Pilares y USP</h4>
-                  <ul class="list">
-                    <li>Profundidad emergente a través de sinergias (niveles 2 y 3).</li>
-                    <li>Game feel premium: hitstop, screen shake, audio reactivo.</li>
-                    <li>Rejugabilidad infinita con Director de IA procedural.</li>
-                  </ul>
-
-                </div>
-
-                <aside>
-                  <div style="display:flex;flex-direction:column;gap:10px">
-                    <span class="badge">GDD integrado</span>
-                    <div style="font-size:13px;color:var(--muted);">Versión: 3.0 · Fecha: 29 de enero, 2026</div>
-
-                    <div style="margin-top:8px">
-                      <a class="btn" href="assets/AFTERSHOCK_GDD_v3_COMPLETO.docx" download>Descargar GDD</a>
-                      <a class="btn ghost" href="#">Repositorio</a>
-                    </div>
-
-                    <div style="margin-top:12px">
-                      <strong style="color:var(--accent)">Tech stack</strong>
-                      <div style="margin-top:8px;color:var(--muted)">
-                        Godot 4.x · GDScript · Firebase (analytics & save) · Git/GitHub
-                      </div>
-                    </div>
-
-                    <div style="margin-top:12px">
-                      <strong style="color:var(--accent)">Monetización</strong>
-                      <div style="margin-top:8px;color:var(--muted)">F2P ético: IAPs cosméticos, pase de batalla, rewarded ads (opcional).</div>
-                    </div>
-
-                  </div>
-                </aside>
-
+  <!-- About Section -->
+  <section id="sobre" class="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">[ BACKGROUND ]</span>
+        <h2 class="section-title">Sobre mí</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-main">
+          <p class="lead">
+            Soy <strong>Agustín Aragón</strong>, programador con 3 años de experiencia enfocado en desarrollo de videojuegos con <span class="text-accent">Godot 4</span>. Mi pasión es crear experiencias que se sientan impactantes y memorables — cada golpe debe tener peso, cada sistema debe ser elegante por dentro y explosivo por fuera.
+          </p>
+          <p>
+            Los <strong>roguelites</strong> me fascinan porque combinan dos cosas que amo: sistemas emergentes complejos y game feel premium. Me especializo en diseñar arquitecturas modulares que permitan escalar proyectos sin sacrificar performance ni claridad de código.
+          </p>
+          <p>
+            Actualmente desarrollo <strong>AFTERSHOCK</strong>, un roguelite de acción para mobile que prioriza profundidad estratégica y rejugabilidad infinita a través de un sistema de sinergias multi-nivel y un Director de IA procedural.
+          </p>
+          
+          <div class="philosophy">
+            <div class="philosophy-title">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+              Mi filosofía de desarrollo
+            </div>
+            <ul class="philosophy-list">
+              <li><strong>Game feel primero:</strong> Los jugadores sienten antes de pensar. Hitstop, screenshake y audio reactivo no son "polish" — son fundamentales.</li>
+              <li><strong>Código como arquitectura:</strong> Un sistema bien diseñado es fácil de extender, difícil de romper y elegante de leer.</li>
+              <li><strong>Emergencia sobre contenido:</strong> Prefiero 10 mecánicas que interactúan de 100 formas que 100 mecánicas aisladas.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="about-side">
+          <div class="info-card">
+            <div class="info-card-header">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 2v16m-6-8l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              En este momento
+            </div>
+            <div class="info-card-content">
+              <div class="info-item">
+                <span class="info-label">Proyecto principal</span>
+                <span class="info-value">AFTERSHOCK</span>
               </div>
-
-              <h4 style="margin-top:12px;color:#cfeffd">Roadmap resumido</h4>
-              <ol class="list">
-                <li>Pre-producción: GDD finalizado, prototipo técnico (movimiento, disparo, spawning).</li>
-                <li>Vertical Slice / MVP: 1 personaje completo, 1 distrito, 10 oleadas y 15 mejoras funcionales.</li>
-                <li>Alpha / Beta → Closed Alpha / Open Beta y ajuste por analíticas.</li>
-                <li>Lanzamiento v1.0 y post-lanzamiento con actualizaciones periódicas.</li>
-              </ol>
-
+              <div class="info-item">
+                <span class="info-label">Estado</span>
+                <span class="info-value">
+                  <span class="status-badge active">Desarrollo activo</span>
+                </span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Última actualización</span>
+                <span class="info-value">29 enero, 2026</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Fase actual</span>
+                <span class="info-value">Vertical Slice / MVP</span>
+              </div>
             </div>
           </div>
 
-          <!-- Ejemplo de proyectos adicionales -->
-          <div style="height:14px"></div>
-          <div class="project">
-            <h3>Proyecto personal — prototipos y herramientas</h3>
-            <p class="meta">Repositorios: GitHub · Builds: Itch.io (cuando esté disponible)</p>
-            <p>Pequeños prototipos y utilidades para Godot: sistemas de HUD, pooling, manager de mejoras y ejemplos de shaders simples.</p>
+          <div class="info-card">
+            <div class="info-card-header">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 5v10m-5-5h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Intereses
+            </div>
+            <div class="info-card-content">
+              <div class="tag-cloud">
+                <span class="tag">Roguelites</span>
+                <span class="tag">Sistemas emergentes</span>
+                <span class="tag">Game feel</span>
+                <span class="tag">Arquitectura modular</span>
+                <span class="tag">Mobile optimization</span>
+                <span class="tag">Procedural generation</span>
+              </div>
+            </div>
           </div>
-        </section>
-
-        <section id="contacto">
-          <h2>Contacto</h2>
-          <p class="lead">GitHub: <a href="https://github.com/guguslu" style="color:var(--accent)">github.com/guguslu</a> · Itch.io: <a href="https://guguslu.itch.io" style="color:var(--accent)">guguslu.itch.io</a></p>
-          <p class="lead">Email: <a href="mailto:diegoagustinaragon@gmail.com" style="color:var(--accent)">diegoagustinaragon@gmail.com</a></p>
-        </section>
-
-      </main>
-
-      <aside>
-        <section id="skills">
-          <h2>Habilidades</h2>
-          <div style="margin-top:8px" class="skills">
-            <span class="chip">GDScript — Intermedio</span>
-            <span class="chip">Godot 4.x</span>
-            <span class="chip">C++ — Principiante alto</span>
-            <span class="chip">C# — Básico</span>
-            <span class="chip">Python — Principiante alto</span>
-            <span class="chip">HTML / CSS — Intermedio</span>
-            <span class="chip">PHP — Intermedio</span>
-            <span class="chip">JavaScript — Principiante</span>
-            <span class="chip">Git / GitHub</span>
-          </div>
-        </section>
-
-        <section style="margin-top:18px">
-          <h2>Contacto rápido</h2>
-          <p style="color:var(--muted);font-size:14px">Si querés que revise código, te ayude a estructurar el repo o preparar un build jugable para Itch.io, decime y lo hacemos.</p>
-          <div style="margin-top:10px">
-            <a class="btn" href="#contacto">Hablemos</a>
-            <a class="btn ghost" href="#proyectos">Ver proyectos</a>
-          </div>
-        </section>
-
-      </aside>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <footer>
-      <div>Hecho por Agus · Portfolio generado — contenido del GDD integrado y resumido.</div>
-      <div style="margin-top:8px;color:var(--muted)">Versión GDD usada: AFTERSHOCK v3.0 (29-01-2026)</div>
-    </footer>
-  </div>
+  <!-- Projects Section -->
+  <section id="proyectos" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">[ WORK ]</span>
+        <h2 class="section-title">Proyectos</h2>
+      </div>
+
+      <!-- AFTERSHOCK - Main Project -->
+      <div class="project-featured">
+        <div class="project-visual">
+          <img src="Captura_de_pantalla_2026-01-29_042333.png" alt="AFTERSHOCK" class="project-image">
+          <div class="project-overlay">
+            <span class="featured-badge">PROYECTO PRINCIPAL</span>
+          </div>
+        </div>
+        
+        <div class="project-content">
+          <div class="project-header">
+            <div>
+              <h3 class="project-title">AFTERSHOCK</h3>
+              <p class="project-tagline">Protocolo de Supervivencia — Roguelite de Acción Mobile</p>
+            </div>
+            <div class="project-meta">
+              <span class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="2"/>
+                  <path d="M8 4v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                2024 - Presente
+              </span>
+              <span class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <rect x="2" y="3" width="12" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M2 6h12" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                Godot 4.x
+              </span>
+              <span class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                Android / iOS
+              </span>
+            </div>
+          </div>
+
+          <p class="project-description">
+            Roguelite de acción que combina supervivencia en tiempo real con construcción estratégica de builds. El diseño prioriza <strong>game feel premium</strong>, rejugabilidad infinita y un sistema de <strong>sinergias multi-nivel</strong> que permite combinaciones emergentes devastadoras. Un Director de IA procedural ajusta dinámicamente la dificultad y genera eventos únicos cada partida.
+          </p>
+
+          <div class="project-details">
+            <div class="detail-block">
+              <h4 class="detail-title">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path d="M9 2l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z" fill="currentColor"/>
+                </svg>
+                Pilares de Diseño
+              </h4>
+              <ul class="detail-list">
+                <li><strong>Profundidad emergente:</strong> Sistema de sinergias de 3 niveles que recompensa el conocimiento del juego</li>
+                <li><strong>Game feel premium:</strong> Hitstop, screen shake, partículas y audio reactivo en cada interacción</li>
+                <li><strong>Rejugabilidad infinita:</strong> Director de IA que genera oleadas procedurales únicas</li>
+                <li><strong>Mobile-first:</strong> Controles intuitivos y performance constante a 60 FPS</li>
+              </ul>
+            </div>
+
+            <div class="detail-block">
+              <h4 class="detail-title">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <rect x="3" y="3" width="12" height="12" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M3 7h12M7 3v12" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                Mi Rol (Desarrollador Principal)
+              </h4>
+              <ul class="detail-list">
+                <li>Programación completa de sistemas de gameplay (mejoras, sinergias, pooling, combat)</li>
+                <li>Diseño y estructuración del GDD v3.0 completo (70+ páginas)</li>
+                <li>Arquitectura modular para personajes, enemigos, oleadas y eventos</li>
+                <li>Implementación del Director de IA con ajuste dinámico de dificultad</li>
+                <li>Optimización para mobile (object pooling, culling, separación de lógica)</li>
+                <li>Sistema de sinergias multi-nivel con detección automática de combinaciones</li>
+              </ul>
+            </div>
+
+            <div class="detail-block">
+              <h4 class="detail-title">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path d="M2 2l14 14M2 16L16 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                Tech Stack
+              </h4>
+              <div class="tech-grid">
+                <span class="tech-item">Godot 4.x</span>
+                <span class="tech-item">GDScript</span>
+                <span class="tech-item">Firebase Analytics</span>
+                <span class="tech-item">Git / GitHub</span>
+                <span class="tech-item">Object Pooling</span>
+                <span class="tech-item">State Machine</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-roadmap">
+            <h4 class="roadmap-title">Roadmap de Desarrollo</h4>
+            <div class="roadmap-timeline">
+              <div class="timeline-item completed">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <div class="timeline-phase">Pre-producción</div>
+                  <div class="timeline-desc">GDD finalizado, prototipo técnico funcional</div>
+                </div>
+              </div>
+              <div class="timeline-item active">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <div class="timeline-phase">Vertical Slice / MVP</div>
+                  <div class="timeline-desc">1 personaje, 1 distrito, 10 oleadas, 15 mejoras — 70% completo</div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <div class="timeline-phase">Alpha / Beta</div>
+                  <div class="timeline-desc">Closed testing, métricas de retención, balanceo</div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <div class="timeline-phase">Lanzamiento v1.0</div>
+                  <div class="timeline-desc">Soft launch + expansión de contenido post-launch</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <a href="assets/AFTERSHOCK_GDD_v3_COMPLETO.docx" download class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M9 2v10m0 0l3-3m-3 3l-3-3m-4 6h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Descargar GDD completo (v3.0)
+            </a>
+            <button class="btn btn-ghost" disabled>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M9 2v14M2 9h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Demo jugable (Próximamente)
+            </button>
+            <button class="btn btn-ghost" disabled>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M2 6c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2v6c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6z" stroke="currentColor" stroke-width="2"/>
+                <path d="M7 8l4 2-4 2V8z" fill="currentColor"/>
+              </svg>
+              Ver gameplay (Próximamente)
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Projects -->
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-card-header">
+            <h4 class="project-card-title">Sistema de Pooling Optimizado</h4>
+            <span class="project-card-status">GitHub</span>
+          </div>
+          <p class="project-card-desc">
+            Sistema de object pooling genérico para Godot que reduce uso de memoria en 40% y mantiene 60 FPS con 200+ entidades activas. Incluye pre-calentamiento y auto-expansión.
+          </p>
+          <div class="project-card-tech">
+            <span>GDScript</span>
+            <span>Performance</span>
+            <span>Mobile</span>
+          </div>
+          <button class="project-card-link" disabled>
+            <span>Ver repositorio</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <h4 class="project-card-title">HUD Modular con Signals</h4>
+            <span class="project-card-status">GitHub</span>
+          </div>
+          <p class="project-card-desc">
+            Sistema de HUD completamente desacoplado usando signals de Godot. Permite actualizar UI sin referencias directas, facilitando testing y reutilización de componentes.
+          </p>
+          <div class="project-card-tech">
+            <span>GDScript</span>
+            <span>UI/UX</span>
+            <span>Signals</span>
+          </div>
+          <button class="project-card-link" disabled>
+            <span>Ver repositorio</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <h4 class="project-card-title">Shader Pack 2D</h4>
+            <span class="project-card-status">GitHub</span>
+          </div>
+          <p class="project-card-desc">
+            Colección de shaders para efectos 2D: dissolve, outline dinámico, distorsión de impacto, chromatic aberration. Optimizados para mobile con toggle de calidad.
+          </p>
+          <div class="project-card-tech">
+            <span>GLSL</span>
+            <span>Shaders</span>
+            <span>VFX</span>
+          </div>
+          <button class="project-card-link" disabled>
+            <span>Ver repositorio</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">[ EXPERTISE ]</span>
+        <h2 class="section-title">Habilidades Técnicas</h2>
+      </div>
+
+      <div class="skills-content">
+        <div class="skills-primary">
+          <h3 class="skills-category-title">Core Skills</h3>
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span class="skill-name">GDScript</span>
+                <span class="skill-level">Avanzado</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-fill" style="width: 85%"></div>
+              </div>
+              <p class="skill-note">3 años de experiencia. Arquitectura modular, signals, recursos custom.</p>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span class="skill-name">Godot Engine 4.x</span>
+                <span class="skill-level">Avanzado</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-fill" style="width: 80%"></div>
+              </div>
+              <p class="skill-note">Nodes, scenes, signals, resources, shaders, physics, optimization.</p>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span class="skill-name">Game Design (Sistemas)</span>
+                <span class="skill-level">Intermedio-Avanzado</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-fill" style="width: 75%"></div>
+              </div>
+              <p class="skill-note">Sinergias, progresión, balanceo, emergencia, game feel, loops.</p>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span class="skill-name">Mobile Optimization</span>
+                <span class="skill-level">Intermedio-Avanzado</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-fill" style="width: 70%"></div>
+              </div>
+              <p class="skill-note">Object pooling, culling, batching, performance profiling.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-secondary">
+          <h3 class="skills-category-title">Lenguajes de Programación</h3>
+          <div class="skills-grid">
+            <div class="skill-chip advanced">
+              <span class="chip-icon">●</span>
+              <div>
+                <div class="chip-name">GDScript</div>
+                <div class="chip-level">Avanzado</div>
+              </div>
+            </div>
+            <div class="skill-chip intermediate">
+              <span class="chip-icon">●</span>
+              <div>
+                <div class="chip-name">Python</div>
+                <div class="chip-level">Intermedio</div>
+              </div>
+            </div>
+            <div class="skill-chip intermediate">
+              <span class="chip-icon">●</span>
+              <div>
+                <div class="chip-name">C++</div>
+                <div class="chip-level">Básico-Intermedio</div>
+              </div>
+            </div>
+            <div class="skill-chip beginner">
+              <span class="chip-icon">●</span>
+              <div>
+                <div class="chip-name">C#</div>
+                <div class="chip-level">Básico</div>
+              </div>
+            </div>
+            <div class="skill-chip intermediate">
+              <span class="chip-icon">●</span>
+              <div>
+                <div class="chip-name">JavaScript</div>
+                <div class="chip-level">Intermedio</div>
+              </div>
+            </div>
+            <div class="skill-chip intermediate">
+              <span class="chip-icon">●</span>
+              <div>
+                <div class="chip-name">HTML/CSS</div>
+                <div class="chip-level">Intermedio</div>
+              </div>
+            </div>
+            <div class="skill-chip intermediate">
+              <span class="chip-icon">●</span>
+              <div>
+                <div class="chip-name">PHP</div>
+                <div class="chip-level">Intermedio</div>
+              </div>
+            </div>
+            <div class="skill-chip intermediate">
+              <span class="chip-icon">●</span>
+              <div>
+                <div class="chip-name">GLSL (Shaders)</div>
+                <div class="chip-level">Básico-Intermedio</div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="skills-category-title" style="margin-top: 32px">Herramientas & Workflows</h3>
+          <div class="tools-list">
+            <div class="tool-item">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 2l8 4v6l-8 6-8-6V6l8-4z" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+              <span>Git / GitHub — Control de versiones</span>
+            </div>
+            <div class="tool-item">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M3 8h14M8 3v14" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <span>Firebase — Analytics & Cloud Save</span>
+            </div>
+            <div class="tool-item">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="2"/>
+                <path d="M10 6v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>Notion / Trello — Project management</span>
+            </div>
+            <div class="tool-item">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 6h12M4 10h12M4 14h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>GDD Writing — Documentación técnica</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contacto" class="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-text">
+          <h2 class="contact-title">Trabajemos juntos</h2>
+          <p class="contact-desc">
+            ¿Tenés un proyecto en mente? ¿Necesitás ayuda con sistemas de gameplay, arquitectura de código o optimización para mobile? Estoy disponible para colaboraciones y nuevos desafíos.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:diegoagustinaragon@gmail.com" class="contact-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <div>
+                <div class="link-label">Email</div>
+                <div class="link-value">diegoagustinaragon@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://github.com/guguslu" target="_blank" class="contact-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/>
+              </svg>
+              <div>
+                <div class="link-label">GitHub</div>
+                <div class="link-value">github.com/guguslu</div>
+              </div>
+            </a>
+            <a href="https://guguslu.itch.io" target="_blank" class="contact-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect x="4" y="8" width="16" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 8V6a2 2 0 012-2h4a2 2 0 012 2v2M12 12v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <div>
+                <div class="link-label">Itch.io</div>
+                <div class="link-value">guguslu.itch.io</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="contact-cta">
+          <div class="cta-card">
+            <div class="cta-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 12v16m-8-8h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="cta-title">¿Querés colaborar?</h3>
+            <p class="cta-desc">
+              Puedo ayudarte a estructurar tu proyecto, revisar código, implementar sistemas de gameplay o preparar builds jugables para Itch.io.
+            </p>
+            <a href="mailto:diegoagustinaragon@gmail.com" class="btn btn-primary btn-large">
+              Hablemos
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">AG</div>
+          <p class="footer-tagline">Game Developer · Godot Specialist</p>
+        </div>
+        <div class="footer-info">
+          <p>Portfolio diseñado y desarrollado por Agustín Aragón</p>
+          <p class="footer-version">Basado en AFTERSHOCK GDD v3.0 (29/01/2026)</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
