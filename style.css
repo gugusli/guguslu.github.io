@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: #eaeaea;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  text-align: center;
+  padding: 2rem;
+  background: #1a1a1a;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+  color: #7dd3fc;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.project {
+  border: 1px solid #333;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
