@@ -1,56 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio – Agus</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agus — Portfolio · Programador de Videojuegos (Godot)</title>
+  <meta name="description" content="Portfolio de Agus — programador de videojuegos. Proyectos: AFTERSHOCK (roguelite en desarrollo), herramientas y repositorios." />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <h1>Agus</h1>
-    <p>Programador de videojuegos · Godot</p>
-  </header>
-
-  <main>
-    <section>
-      <h2>Sobre mí</h2>
-      <p>
-        Programador enfocado en desarrollo de videojuegos con Godot.
-        Me interesa crear sistemas claros, jugabilidad sólida y proyectos bien organizados.
-      </p>
-    </section>
-
-    <section>
-      <h2>Proyectos</h2>
-
-      <div class="project">
-        <h3>Proyecto personal</h3>
-        <p>Juego en desarrollo donde trabajo sistemas de movimiento, combate y UI.</p>
-        <a href="#">Repositorio</a>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">AG</div>
+        <div>
+          <h1>Agustín (guguslu / gus) — Programador de videojuegos</h1>
+          <p>Godot 4 · GDScript · Diseño de sistemas · Proyectos jugables · Roguelites</p>
+        </div>
       </div>
+      <nav>
+        <a href="#sobre">Sobre mí</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
 
-      <div class="project">
-        <h3>Proyecto en equipo</h3>
-        <p>Participé como programador, trabajando lógica de gameplay y escenas.</p>
-        <a href="#">Repositorio</a>
-      </div>
+    <div class="grid">
+      <main>
+        <section id="sobre">
+          <h2>Sobre mí</h2>
+          <p class="lead">Soy programador con aproximadamente tres años de experiencia en desarrollo y lógica de software, enfocado actualmente en desarrollo de videojuegos con Godot 4. Trabajo principalmente con GDScript, diseñando sistemas de gameplay, progresión, sinergias y arquitectura modular orientada a proyectos escalables. Me interesa especialmente el game feel, la claridad de código y la organización de proyectos en equipo.</p>
 
-    </section>
+          <p class="lead">Actualmente desarrollo <strong>AFTERSHOCK</strong>, un roguelite de acción para mobile (Android/iOS). El proyecto está en proceso y mi rol incluye diseño e implementación de sistemas de gameplay, mejoras y sinergias, arquitectura modular y planificación técnica mediante un GDD completo.</p>
+        </section>
 
-    <section>
-      <h2>Tecnologías</h2>
-      <ul>
-        <li>Godot 4</li>
-        <li>GDScript</li>
-        <li>Git / GitHub</li>
-      </ul>
-    </section>
-  </main>
+        <section id="proyectos">
+          <h2>Proyectos</h2>
 
-  <footer>
-    <p>GitHub · Itch.io</p>
-  </footer>
+          <div class="project">
+            <h3>AFTERSHOCK — Roguelite de acción (Proyecto personal / En proceso)</h3>
+            <div class="meta">Motor: Godot 4.x · Plataforma objetivo: Mobile (Android/iOS) · Estado: <span class="status">en desarrollo</span></div>
 
+            <div style="margin-top:12px;">
+              <p>AFTERSHOCK combina supervivencia en tiempo real con construcción estratégica de builds. El diseño prioriza game feel, rejugabilidad y un sistema de <strong>sinergias por niveles</strong> que permite combinaciones emergentes potentes, además de un Director de IA que ajusta la dificultad dinámicamente.</p>
+
+              <div class="cols">
+                <div>
+                  <h4 style="margin:6px 0;color:#cfeffd">Qué hice (mi rol)</h4>
+                  <ul class="list">
+                    <li>Programación de sistemas de gameplay (mejoras, sinergias, pooling).</li>
+                    <li>Diseño técnico y estructuración del GDD y roadmap.</li>
+                    <li>Arquitectura modular para personajes, enemigos y oleadas.</li>
+                    <li>Implementación de Director de IA para ajuste de oleadas y eventos.</li>
+                    <li>Enfoque en performance móvil (object pooling, separación de lógica).</li>
+                  </ul>
+
+                  <h4 style="margin:6px 0;color:#cfeffd">Pilares y USP</h4>
+                  <ul class="list">
+                    <li>Profundidad emergente a través de sinergias (niveles 2 y 3).</li>
+                    <li>Game feel premium: hitstop, screen shake, audio reactivo.</li>
+                    <li>Rejugabilidad infinita con Director de IA procedural.</li>
+                  </ul>
+
+                </div>
+
+                <aside>
+                  <div style="display:flex;flex-direction:column;gap:10px">
+                    <span class="badge">GDD integrado</span>
+                    <div style="font-size:13px;color:var(--muted);">Versión: 3.0 · Fecha: 29 de enero, 2026</div>
+
+                    <div style="margin-top:8px">
+                      <a class="btn" href="assets/AFTERSHOCK_GDD_v3_COMPLETO.docx" download>Descargar GDD</a>
+                      <a class="btn ghost" href="#">Repositorio</a>
+                    </div>
+
+                    <div style="margin-top:12px">
+                      <strong style="color:var(--accent)">Tech stack</strong>
+                      <div style="margin-top:8px;color:var(--muted)">
+                        Godot 4.x · GDScript · Firebase (analytics & save) · Git/GitHub
+                      </div>
+                    </div>
+
+                    <div style="margin-top:12px">
+                      <strong style="color:var(--accent)">Monetización</strong>
+                      <div style="margin-top:8px;color:var(--muted)">F2P ético: IAPs cosméticos, pase de batalla, rewarded ads (opcional).</div>
+                    </div>
+
+                  </div>
+                </aside>
+
+              </div>
+
+              <h4 style="margin-top:12px;color:#cfeffd">Roadmap resumido</h4>
+              <ol class="list">
+                <li>Pre-producción: GDD finalizado, prototipo técnico (movimiento, disparo, spawning).</li>
+                <li>Vertical Slice / MVP: 1 personaje completo, 1 distrito, 10 oleadas y 15 mejoras funcionales.</li>
+                <li>Alpha / Beta → Closed Alpha / Open Beta y ajuste por analíticas.</li>
+                <li>Lanzamiento v1.0 y post-lanzamiento con actualizaciones periódicas.</li>
+              </ol>
+
+            </div>
+          </div>
+
+          <!-- Ejemplo de proyectos adicionales -->
+          <div style="height:14px"></div>
+          <div class="project">
+            <h3>Proyecto personal — prototipos y herramientas</h3>
+            <p class="meta">Repositorios: GitHub · Builds: Itch.io (cuando esté disponible)</p>
+            <p>Pequeños prototipos y utilidades para Godot: sistemas de HUD, pooling, manager de mejoras y ejemplos de shaders simples.</p>
+          </div>
+        </section>
+
+        <section id="contacto">
+          <h2>Contacto</h2>
+          <p class="lead">GitHub: <a href="https://github.com/guguslu" style="color:var(--accent)">github.com/guguslu</a> · Itch.io: <a href="https://guguslu.itch.io" style="color:var(--accent)">guguslu.itch.io</a></p>
+          <p class="lead">Email: <a href="mailto:diegoagustinaragon@gmail.com" style="color:var(--accent)">diegoagustinaragon@gmail.com</a></p>
+        </section>
+
+      </main>
+
+      <aside>
+        <section id="skills">
+          <h2>Habilidades</h2>
+          <div style="margin-top:8px" class="skills">
+            <span class="chip">GDScript — Intermedio</span>
+            <span class="chip">Godot 4.x</span>
+            <span class="chip">C++ — Principiante alto</span>
+            <span class="chip">C# — Básico</span>
+            <span class="chip">Python — Principiante alto</span>
+            <span class="chip">HTML / CSS — Intermedio</span>
+            <span class="chip">PHP — Intermedio</span>
+            <span class="chip">JavaScript — Principiante</span>
+            <span class="chip">Git / GitHub</span>
+          </div>
+        </section>
+
+        <section style="margin-top:18px">
+          <h2>Contacto rápido</h2>
+          <p style="color:var(--muted);font-size:14px">Si querés que revise código, te ayude a estructurar el repo o preparar un build jugable para Itch.io, decime y lo hacemos.</p>
+          <div style="margin-top:10px">
+            <a class="btn" href="#contacto">Hablemos</a>
+            <a class="btn ghost" href="#proyectos">Ver proyectos</a>
+          </div>
+        </section>
+
+      </aside>
+    </div>
+
+    <footer>
+      <div>Hecho por Agus · Portfolio generado — contenido del GDD integrado y resumido.</div>
+      <div style="margin-top:8px;color:var(--muted)">Versión GDD usada: AFTERSHOCK v3.0 (29-01-2026)</div>
+    </footer>
+  </div>
 </body>
 </html>
+
